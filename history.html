@@ -3,13 +3,36 @@
 <head>
     <title>History</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .download-bar {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: bold;
+        }
+        .btn-csv {
+            background: #2E7D32;
+            color: white;
+        }
+        .btn-pdf {
+            background: #e53935;
+            color: white;
+        }
+        .btn:hover {
+            opacity: 0.85;
+        }
+    </style>
 </head>
 <body>
-
 <div class="navbar">
-
     <h2>History</h2>
-
     <ul>
         <li><a href="dashboard.html">Dashboard</a></li>
         <li><a href="history.html">History</a></li>
@@ -17,30 +40,23 @@
         <li><a href="alerts.html">Alerts</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
-
 </div>
-
 <div class="container">
-
-<table>
-
-<tr>
-    <th>Date</th>
-    <th>Temperature</th>
-    <th>Humidity</th>
-    <th>Soil Moisture</th>
-</tr>
-
-<tr>
-    <td>01/06/2026</td>
-    <td>28°C</td>
-    <td>75%</td>
-    <td>60%</td>
-</tr>
-
-</table>
-
+    <h2 style="margin-bottom:20px;">Sensor Reading History</h2>
+    <div class="download-bar">
+        <button class="btn btn-csv" onclick="downloadCSV()">⬇ Download CSV</button>
+        <button class="btn btn-pdf" onclick="downloadPDF()">⬇ Download PDF</button>
+    </div>
+    <table id="historyTable">
+        <tr>
+            <th>#</th>
+            <th>Timestamp</th>
+            <th>Temperature (°C)</th>
+            <th>Humidity (%)</th>
+            <th>Soil Moisture (%)</th>
+        </tr>
+    </table>
 </div>
-
+<script type="module" src="js/history.js"></script>
 </body>
 </html>

@@ -4,13 +4,13 @@ import { getDatabase } from "https://www.gstatic.com/firebasejs/10.12.2/firebase
 
 // Your Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCWPahs9CTEsd_mZaYHFcS0f4VpMz5kVa4",
-  authDomain: "agriculturedatacollection.firebaseapp.com",
-  databaseURL: "https://agriculturedatacollection-default-rtdb.firebaseio.com",
-  projectId: "agriculturedatacollection",
-  storageBucket: "agriculturedatacollection.firebasestorage.app",
-  messagingSenderId: "938327371167",
-  appId: "1:938327371167:web:0585a5934e1516b9dea1aa"
+  apiKey: "AIzaSyBhavSj0TZDdzSlCcv7QkTOMZCxrPqqUbs",
+  authDomain: "iot-project-d9538.firebaseapp.com",
+  databaseURL: "https://iot-project-d9538-default-rtdb.firebaseio.com",
+  projectId: "iot-project-d9538",
+  storageBucket: "iot-project-d9538.firebasestorage.app",
+  messagingSenderId: "158264930597",
+  appId: "1:158264930597:web:fb73e6b7a64b39d5c4aacc"
 };
 
 // Initialize Firebase

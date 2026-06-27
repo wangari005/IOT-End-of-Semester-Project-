@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>History</title>
+    <title>Analytics</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
 <div class="navbar">
-
     <h2>Analytics</h2>
-
     <ul>
         <li><a href="dashboard.html">Dashboard</a></li>
         <li><a href="history.html">History</a></li>
@@ -17,24 +15,31 @@
         <li><a href="alerts.html">Alerts</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
-
 </div>
-
 <div class="container">
-    <div>
-        <h2>Graphs</h2>
-
-        <div class="card"></div>
+    <div class="cards" style="margin-bottom:30px;">
+        <div class="card">
+            <h3>Avg Temperature</h3>
+            <p id="avgTemp" class="value">--</p>
+        </div>
+        <div class="card">
+            <h3>Avg Humidity</h3>
+            <p id="avgHumidity" class="value">--</p>
+        </div>
+        <div class="card">
+            <h3>Avg Soil Moisture</h3>
+            <p id="avgSoil" class="value">--</p>
+        </div>
     </div>
-
-    <div>
-        <h2>Charts</h2>
-
-        <div class="card"></div>
+    <div class="chart-section" style="margin-bottom:30px;">
+        <h3>Sensor Averages</h3>
+        <canvas id="barChart"></canvas>
     </div>
-
-
+    <div class="chart-section">
+        <h3>Trends Over Time</h3>
+        <canvas id="lineChart"></canvas>
+    </div>
 </div>
-
+<script type="module" src="js/analytics.js"></script>
 </body>
 </html>

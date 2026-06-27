@@ -5,11 +5,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <div class="navbar">
-
     <h2>Alerts</h2>
-
     <ul>
         <li><a href="dashboard.html">Dashboard</a></li>
         <li><a href="history.html">History</a></li>
@@ -17,22 +14,25 @@
         <li><a href="alerts.html">Alerts</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
-
 </div>
-
 <div class="container">
-
-<h2>System Alerts</h2>
-
-<div class="card">
-
-<p>
-⚠ Soil moisture below 30%
-</p>
-
+    <h2 style="margin-bottom:20px;">System Alerts</h2>
+    <div class="cards" style="margin-bottom:30px;">
+        <div class="card">
+            <h3>Temperature</h3>
+            <p id="tempStatus" class="value">--</p>
+        </div>
+        <div class="card">
+            <h3>Humidity</h3>
+            <p id="humidityStatus" class="value">--</p>
+        </div>
+        <div class="card">
+            <h3>Soil Moisture</h3>
+            <p id="soilStatus" class="value">--</p>
+        </div>
+    </div>
+    <div id="alertsList"></div>
 </div>
-
-</div>
-
+<script type="module" src="js/alerts.js"></script>
 </body>
 </html>
