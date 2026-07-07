@@ -14,7 +14,7 @@ FIREBASE_URL = "https://iot-project-d9538-default-rtdb.firebaseio.com"
 FIREBASE_PATH = "/sensor_readings.json"
 
 # --- Sensor Setup ---
-dht_sensor = dht.DHT22(machine.Pin(15))
+dht_sensor = dht.DHT22(machine.Pin(18))
 
 soil_adc = machine.ADC(machine.Pin(34))
 soil_adc.atten(machine.ADC.ATTN_11DB)
